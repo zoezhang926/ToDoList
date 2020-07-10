@@ -1,0 +1,96 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing:border-box;
+}
+body{
+	background-image: url(https://images.unsplash.com/photo-1502673530728-f79b4cab31b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+	background-size:100%;
+	/*background-image: linear-gradient(120deg,#b82e8a,#ebadd6);*/
+	font-family: 'Chelsea Market', cursive;
+}
+
+h1,
+ul{
+	color:black;
+}
+
+header{
+	font-size: 1.5rem;
+}
+header,
+form,
+li{
+	min-height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+form input{
+	padding:30px;
+	border: 3px solid #555;
+	opacity: 0.8
+}
+form button{
+	color:#3CB371;
+	background:white;
+	cursor:pointer;
+	transition: all 0.3s ease;
+	padding:30px;
+}
+
+form button:hover{
+	background:#3CB371;
+	color:white;
+}
+.todo-container{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+.todo-list{
+	min-width: 30%;
+	list-style: none;
+}
+.todo{
+	height:3rem;
+	margin: 1rem;
+	background: white;
+	color: black;
+	font-size: 1.5 rem;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	transition: all 0.5s ease;
+}
+
+.todo li{
+	flex: 1;
+}
+.trash-btn,
+.complete-btn{
+	background: #a3297a;
+	color: white;
+	border: none;
+	padding: 1rem;
+	cursor: pointer;
+	font-size: 1rem;
+}
+.complete-btn{
+	background: rgb(73,204,73);
+}
+.todo-item{
+	padding:0rem 0.5rem;
+}
+.fa-trash,
+.fa-check{
+	pointer-events: none;
+}
+.completed{
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+.fall{
+	transform:translateY(8rem) rotateZ(20deg);
+	opacity:0;
+}
